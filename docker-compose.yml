@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  web:
+    build: .
+    volumes:
+      - .:/src
+    ports:
+      - "8001:8000"
+    tty: true
+  redis:
+    image: "redis:latest"
+    ports:
+      - "6379:6379"
