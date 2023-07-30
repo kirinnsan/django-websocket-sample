@@ -1,0 +1,2 @@
+GET  http://localhost:8001/socket/external/?client_id=test1234 HTTP/1.1
+content-type: application/json

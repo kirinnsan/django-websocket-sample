@@ -9,5 +9,6 @@ docker-compose up -d
 python manage.py runserver 0.0.0.0:8000  
 ↓
 http://localhost:8001/chat
+http://localhost:8001/socket
 ```
 　　
