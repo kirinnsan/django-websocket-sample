@@ -301,6 +301,24 @@ argon2 = ["argon2-cffi (>=19.1.0)"]
 bcrypt = ["bcrypt"]
 
 [[package]]
+name = "django-redis"
+version = "5.3.0"
+description = "Full featured redis cache backend for Django."
+optional = false
+python-versions = ">=3.6"
+files = [
+    {file = "django-redis-5.3.0.tar.gz", hash = "sha256:8bc5793ec06b28ea802aad85ec437e7646511d4e571e07ccad19cfed8b9ddd44"},
+    {file = "django_redis-5.3.0-py3-none-any.whl", hash = "sha256:2d8660d39f586c41c9907d5395693c477434141690fd7eca9d32376af00b0aac"},
+]
+
+[package.dependencies]
+Django = ">=3.2"
+redis = ">=3,<4.0.0 || >4.0.0,<4.0.1 || >4.0.1"
+
+[package.extras]
+hiredis = ["redis[hiredis] (>=3,!=4.0.0,!=4.0.1)"]
+
+[[package]]
 name = "hyperlink"
 version = "21.0.0"
 description = "A featureful, immutable, and correct URL for Python."
@@ -705,4 +723,4 @@ testing = ["coverage (>=5.0.3)", "zope.event", "zope.testing"]
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.11"
-content-hash = "fdc95042add422dd02c6d17ed64d0eecc235121fcd4cbb5a02800f238510c89e"
+content-hash = "de8eda30572f475f2b8caa54890ba7178d44b108de6fbc31f45f02035a7c5b77"
